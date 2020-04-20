@@ -281,7 +281,11 @@ nav{
 }
 }
 
-
+@media all and  (max-width:452px) and (min-width:362px) {
+    .serviceItem{
+        width:85%;
+    }
+}
 
 @media all and  (max-width:320px)  {
     
