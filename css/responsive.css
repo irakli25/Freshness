@@ -178,11 +178,32 @@
 
 }
 
-@media all and  (max-width:452px) {
+
+@media all and  (max-width:452px) and (min-width:320px) {
     
 body{
-    min-width:452px;
+    min-width:320px;
     display:block;
+}
+
+.tv {
+    width: 300px;
+    height: 235px;
+}
+
+.screen {
+    width: 274px;
+    height: 154px;
+    top: 11px;
+    left: 13px;
+}
+
+.textWrapper {
+    width: 300px;
+}
+
+.sliderTitle {
+    text-align: center;
 }
 
 .container{
@@ -232,3 +253,80 @@ nav{
     grid-template-columns: repeat(2, 1fr);
 }
 }
+
+
+
+@media all and  (max-width:320px)  {
+    
+    body{
+        min-width:320px;
+        display:block;
+    }
+
+    .textWrapper {
+        width: 300px;
+    }
+
+    .tv {
+        width: 300px;
+        height: 235px;
+    }
+
+    .screen {
+        width: 274px;
+        height: 154px;
+        top: 11px;
+        left: 13px;
+    }
+    
+    .sliderTitle {
+        text-align: center;
+    }
+    
+    .container{
+        width:100%;
+        padding:10px;
+    }
+    
+    .socialIcons {
+        width: 40%;
+    }
+    
+    .searchButton {
+        font-size: 11px;
+    }
+    .searchBar {
+        width: 45%;
+    }
+    nav{
+        display:none;
+    }
+    
+    .slider {
+        flex-direction: column;
+    }
+    
+    .tvWrapper {
+        margin:auto;
+    }
+    .textWrapper{
+        margin:auto;
+    }
+    
+    .serviceItems {
+        justify-content: space-around;
+    }
+    
+    .serviceItem{
+        width:70%;
+    }
+    
+    .introItem {
+        width:100%;
+    }
+    
+    
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    }
